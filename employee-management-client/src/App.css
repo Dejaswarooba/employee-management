@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+*{
+  
+  font-family: 'Cabin', sans-serif;
+ 
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color:#E5E5CB;
+  
+}
+.outer{
+  background-color: #E5E5CB;
+}
+/* Container for the entire content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #E5E5CB;
+  z-index: 1;
+  height: 100%; 
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  margin-bottom: 20px;
+  z-index: 2; 
+}
+
+.header > * {
+  margin-right: 10px; 
+}
+
+/* Table and Calculate Average Salary section */
+.table-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: #E5E5CB; 
+  color: #E5E5CB;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+tbody{
+  background-color: #E5E5CB;
+}
+
+
+.table {
+  background-color: #E5E5CB; 
+  color: #35271c;
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  
+
+}
+
+.table, th, td {
+  border: 1px solid #35271c ; 
+  text-align: center;
+  padding-right: -1px;
+  
+}
+
+
+
+.table td{
+  
+    color: #35271c; 
+  background-color: #E5E5CB;
+  padding: 20px;
+  
+}
+
+.action{
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+.table-section td:last-child .button {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+/* Calculate Average Salary button styling */
+.calculate-btn {
+  margin-bottom: 10px;
+}
+
+/* Back to Home button styling */
+.back-btn {
+  align-self: flex-end;
+}
+
+button,.button{
+  background-color: #D5CEA3;
+  border:1px solid #1A120B;
+  color: #1A120B;
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 10%;
+}
+button:hover,.button:hover{
+  color: #D5CEA3;
+  border:1px solid #D5CEA3;
+  background-color: #1A120B;
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+h2 {
+  text-align: center;
+  color: #1A120B;
+}
+.title{
+  padding-top: 30px;
+}
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #1A120B;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #1A120B;
+  border-radius: 4px;
+}
