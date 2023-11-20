@@ -4,10 +4,11 @@ const cors = require('cors')
 const UserModel = require('./models/Employees')
 
 const app = express()
+const MONGOURI="mongodb+srv://dejaswaroobabalaji:afHePoHfj2vC6EkC@cluster0.nwwo0jm.mongodb.net/"
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb+srv://dejaswaroobabalaji:afHePoHfj2vC6EkC@cluster0.nwwo0jm.mongodb.net/")
+mongoose.connect(MONGOURI)
 
 app.get('/', (req,res) => {
     UserModel.find({})
