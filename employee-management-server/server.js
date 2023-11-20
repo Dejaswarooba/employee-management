@@ -13,7 +13,7 @@ const uri = "mongodb+srv://dejaswaroobabalaji:afHePoHfj2vC6EkC@cluster0.nwwo0jm.
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  authMechanism: DEFAULT,  // or 'DEFAULT' based on your MongoDB setup
+  authMechanism: 'DEFAULT',  // or 'DEFAULT' based on your MongoDB setup
 });
 
 app.get('/', (req,res) => {
