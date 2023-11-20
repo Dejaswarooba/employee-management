@@ -10,7 +10,11 @@ app.use(express.json())
 
 
 const uri = "mongodb+srv://dejaswaroobabalaji:afHePoHfj2vC6EkC@cluster0.nwwo0jm.mongodb.net/?authMechanism=DEFAULT/employees";
-mongoose.connect(uri);
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  authMechanism: DEFAULT,  // or 'DEFAULT' based on your MongoDB setup
+});
 
 app.get('/', (req,res) => {
     UserModel.find({})
