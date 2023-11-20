@@ -14,7 +14,7 @@ mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   ssl: true,
-  sslValidate: false, // Disable SSL validation (for debugging only)
+  sslValidate: true, // Disable SSL validation (for debugging only)
 });
 
 app.get('/', (req,res) => {
