@@ -10,12 +10,7 @@ app.use(express.json())
 
 
 const uri = "mongodb+srv://dejaswaroobabalaji:afHePoHfj2vC6EkC@cluster0.nwwo0jm.mongodb.net/?authMechanism=DEFAULT/employees";
-mongoose.connect(uri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  ssl: true,
-  sslValidate: true, // Disable SSL validation (for debugging only)
-});
+mongoose.connect(uri);
 
 app.get('/', (req,res) => {
     UserModel.find({})
