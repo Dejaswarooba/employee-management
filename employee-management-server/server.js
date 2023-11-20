@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 
 
-const uri = "mongodb+srv://dejaswaroobabalaji:afHePoHfj2vC6EkC@cluster0.nwwo0jm.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://dejaswaroobabalaji:afHePoHfj2vC6EkC@cluster0.nwwo0jm.mongodb.net/?authMechanism=DEFAULT/employees";
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
